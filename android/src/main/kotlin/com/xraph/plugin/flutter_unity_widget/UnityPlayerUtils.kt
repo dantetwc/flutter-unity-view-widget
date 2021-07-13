@@ -183,6 +183,7 @@ class UnityPlayerUtils {
             }
 
             if (unityPlayer!!.parent != null) {
+                (unityPlayer!!.parent as ViewGroup).removeView(unityPlayer)
                 (unityPlayer!!.parent as ViewGroup).addView(unityPlayer)
             }
 
